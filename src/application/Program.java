@@ -16,7 +16,7 @@ public class Program {
         while (true) {
             try {
                 Ui.clearScreen();
-                Ui.printBoard(chessMatch.getPieces());
+                Ui.printMatch(chessMatch);
 
                 System.out.println();
 
@@ -25,7 +25,7 @@ public class Program {
 
                 boolean [][] possibleMoves = chessMatch.possibleMoves(source);
                 Ui.clearScreen();
-                
+
                 Ui.printBoard(chessMatch.getPieces(), possibleMoves);
 
                 System.out.println();
